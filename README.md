@@ -16,7 +16,7 @@ Requirements
 Installation & Usage
 
 1. Install Python 3 on your terminal if you haven't.
-2. Install `psutil`:
+2. Install psutil:
 
-```bash
+bash
 pip install psutil
