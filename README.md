@@ -19,4 +19,4 @@ Installation & Usage
 2. Install psutil:
 
 bash
-pip install psutil
+install psutil
