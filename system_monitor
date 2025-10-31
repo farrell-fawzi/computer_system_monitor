@@ -1,0 +1,20 @@
+import psutil
+
+CPU_LIMIT = 80
+MEMORY_LIMIT = 80
+DISK_LIMIT = 90
+
+cpu = psutil.cpu_percent(interval=1)
+print(f"CPU usage: {cpu}%")
+if cpu > CPU_LIMIT:
+    print("⚠️ CPU is too high!")
+
+memory = psutil.virtual_memory().percent
+print(f"Memory usage: {memory}%")
+if memory > MEMORY_LIMIT:
+    print("⚠️ Memory is too high!")
+
+disk = psutil.disk_usage('/').percent
+print(f"Disk usage: {disk}%")
+if disk > DISK_LIMIT:
+    print("⚠️ Disk is too high!")
